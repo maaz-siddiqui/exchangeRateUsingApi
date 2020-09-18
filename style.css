@@ -4,6 +4,7 @@
 *{
     margin: 0;
     padding: 0;
+
 }
 :root{
     transition: 0.5s;
@@ -12,6 +13,9 @@ body{
     transition: 0.5s;
     background: url(https://images.pexels.com/photos/3683056/pexels-photo-3683056.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
     overflow-y: hidden;
+}
+.body{
+    width: 100vw;
 }
 .active{
     transition: ease-in-out 0.5s;
@@ -23,8 +27,9 @@ body{
 .head{
     background-color: #56413863;
     margin-bottom: 15px;
-    height: 80px;
-    width: 100%;
+    margin-left: auto;
+    width: 100vw;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -170,3 +175,31 @@ input:checked[type="checkbox"]:before{
     font-size: 5px;
     transform: rotate(-90deg);
 }
+
+/*responsive*/
+@media only screen and (max-width: 600px) {
+    .head{
+        text-align: center;
+        font-size: 11px;       
+    }
+    .inputform{
+        width: 70vw;
+        padding: 10px;
+    }
+    .swap>p{
+        position: relative;
+        top: 18px;
+        left: 50px;
+        transform: rotate(360deg);
+    }
+    .swap{
+        position: absolute;
+        transform: rotate(360deg);
+        top: 673px;
+        left: 0;
+    }
+    label{
+        width: 60vw;
+        font-size: 15px;
+    }
+  }
