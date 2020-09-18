@@ -99,7 +99,8 @@ label{
     font-family: 'Roboto', sans-serif;
 }
 .footer{
-    font-size: 12px;
+    font-size: 15px;
+    font-weight: 500;
     font-family: 'Playfair Display', serif;
     background-color: #f243365e;
     display: flex;
@@ -147,4 +148,25 @@ input[type="checkbox"]:before
 
 input:checked[type="checkbox"]:before{
     transform: translateX(20px);
+}
+.darktext{
+    padding-right: 5px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 800;
+}
+.swap{
+    position: relative;
+    top: -166px;
+    left: 170px;
+    transform: rotate(90deg);
+}
+.swap>p{
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+    top: -30px;
+    left: -15px;
+    font-size: 5px;
+    transform: rotate(-90deg);
 }
