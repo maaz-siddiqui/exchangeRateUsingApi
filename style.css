@@ -179,12 +179,13 @@ input:checked[type="checkbox"]:before{
 /*responsive*/
 @media only screen and (max-width: 600px) {
     .head{
+        height: 10vh;
         text-align: center;
         font-size: 11px;       
     }
     .inputform{
         width: 70vw;
-        padding: 10px;
+        padding: 5px;
     }
     .swap>p{
         position: relative;
@@ -193,13 +194,16 @@ input:checked[type="checkbox"]:before{
         transform: rotate(360deg);
     }
     .swap{
-        position: absolute;
+        position: fixed;
         transform: rotate(360deg);
-        top: 673px;
-        left: 0;
+        top: 83%;
+        left: 5px;
     }
     label{
         width: 60vw;
         font-size: 15px;
+    }
+    .footer{
+        height: 10vh;
     }
   }
