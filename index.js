@@ -17,7 +17,7 @@ function submit(){
     const convert = document.getElementById('convert');
     responseObj = Get(`https://v6.exchangerate-api.com/v6/d108e4b90d10abf082636e69/latest/${basecurrency.value}`);  
     const parseObj = JSON.parse(responseObj);
-    console.log(pkrCurrency.value * parseObj.conversion_rates[convert.value]);
+    // console.log(pkrCurrency.value * parseObj.conversion_rates[convert.value]); //shows output
 
     const output = document.getElementById('output');
     output.innerText = `Converted : ${(pkrCurrency.value * parseObj.conversion_rates[convert.value]).toFixed(2)}  ${convert.value}` ;
